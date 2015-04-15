@@ -1,0 +1,79 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  cursor: default;
+}
+body > * {
+  max-width: 320px;
+  margin: 32px auto;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 6px auto;
+}
+
+footer {
+  text-align: center;
+  font-size: .8em;
+}
+
+footer > img {
+  width: .8em;
+  height: .8em;
+}
+
+h1, fieldset > h2 {
+  text-align: center;
+}
+
+abbr {
+  cursor: help;
+}
+
+legend {
+  font-weight: bold;
+  padding: 6px;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 6px auto;
+  font-size: .9em;
+  font-family: inherit;
+  /*
+    in Dark themed OS, ensure fields are readable
+    http://www.iangraham.org/books/xhtml1/appd/update-23feb2000.html
+  */
+  color: ButtonText;
+}
+
+/*
+  With required aware browsers, and type=email capable
+  this will be implemented somehow natively
+*/
+input[name=email].error, 
+input[name=subject].error,
+textarea[name=message].error {
+  border-color: red;
+}
+
+/* used for fancy animations */
+.t-all {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
