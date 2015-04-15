@@ -105,6 +105,7 @@ document.addEventListener(
         }
       };
       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
       xhr.send(Object.keys(options).reduce(function (s, key) {
         return typeof options[key] !== 'string' ? s : s.concat(
           '&',

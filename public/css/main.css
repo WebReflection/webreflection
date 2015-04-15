@@ -25,6 +25,10 @@ h2 {
   margin: 6px auto;
 }
 
+h2.error {
+  color: red;
+}
+
 footer {
   text-align: center;
   font-size: .8em;
